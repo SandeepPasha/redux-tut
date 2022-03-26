@@ -1,12 +1,10 @@
 import React from 'react';
 import phone from '../asets/win.png';
 
-function Home() {
+function Home(props) {
+    // console.warn("home", props)
   return (
     <div>
-        <div className="add-to-cart">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" alt="" />
-        </div>
         <h1>Home Component</h1>
         <div className='cart-wrapper'>
             <div className='img-wrapper item'>
@@ -17,7 +15,8 @@ function Home() {
                 <span>Price $1000.00</span>
             </div>
             <div className='btn-wrapper item'>
-                <button>Add to Cart</button>
+                <button onClick={()=>props.addToCartHandler({price:1000,name:'I-Phone 11'})}>Add to Cart</button>
+                <button className='remove-cart-btn' onClick={()=>props.removeToCartHandler()}>Remove to Cart</button>
               
             </div>
         </div>
