@@ -34,7 +34,7 @@
   padding: 10px;
   border-radius: 4px;
   color: #fff;
-  box-shadow: #333 0px 1px 5px;
+  box-shadow: #444 0px 1px 5px;
 }
 .img-wrapper img {
   width: 100px;
@@ -43,7 +43,7 @@
   height: 150px;
   width: 500px;
   border: 1px solid #ccc;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 .item {
   float: left;
